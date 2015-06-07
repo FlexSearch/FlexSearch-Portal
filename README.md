@@ -1,14 +1,4 @@
-# aurelia-breeze-northwind
-
-This is a [Northwind](https://northwinddatabase.codeplex.com/) demo using [Aurelia](http://www.aurelia.io/) and [Breeze](http://www.getbreezenow.com/).
-
-![northwind database schema](http://i.imgur.com/I26w9T9.png)
-
-> To keep up to date on [Aurelia](http://www.aurelia.io/), please visit and subscribe to [the official blog](http://blog.durandal.io/). If you have questions, we invite you to [join us on Gitter](https://gitter.im/aurelia/discuss). If you would like to have deeper insight into our development process, please install the [ZenHub](https://zenhub.io) Chrome Extension and visit any of our repository's boards. You can get an overview of all Aurelia work by visiting [the framework board](https://github.com/aurelia/framework#boards).
-
 ## Running The App
-To see the app running on the web, go here [http://jdanyow.github.io/aurelia-breeze-northwind](http://jdanyow.github.io/aurelia-breeze-northwind/#/orders).
-
 To run the app locally, follow these steps:
 
 1. Ensure that [NodeJS](http://nodejs.org/) is installed. This provides the platform on which the build tooling runs.
@@ -31,7 +21,7 @@ To run the app locally, follow these steps:
 5. Install the client-side dependencies with jspm:
 
   ```shell
-  jspm install -y
+  jspm install
   ```
   >**Note:** Windows users, if you experience an error of "unknown command unzip" you can solve this problem by doing `npm install -g unzip` and then re-running `jspm install`.
 6. To run the app, execute the following command:
