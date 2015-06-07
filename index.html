@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+  <head>
+    <title>FlexSearch Portal</title>
+
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="jspm_packages/github/dogfalo/materialize@0.96.1/dist/css/materialize.min.css" media="screen,projection" />
+
+    <!--Import application styles-->
+    <link type="text/css" rel="stylesheet" href="styles/styles.css" />
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  </head>
+  <body aurelia-app="main">
+
+    <!-- Splash Screen -->
+    <div class="splash center-align">
+      <h1>FlexSearch Duplicate Detection Portal</h1>
+      <h5>currently works with <span class="purple-text darken-2">Google Chrome</span> and <span class="light-blue-text darken-2">FireFox</span></h5>
+
+      <!--Materialize Spinner -->
+      <div class="preloader-wrapper big active">
+        <div class="spinner-layer spinner-blue"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div>
+        <div class="spinner-layer spinner-red"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div>
+        <div class="spinner-layer spinner-yellow"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div>
+        <div class="spinner-layer spinner-green"><div class="circle-clipper left"><div class="circle"></div></div><div class="gap-patch"><div class="circle"></div></div><div class="circle-clipper right"><div class="circle"></div></div></div>
+      </div>
+    </div>
+
+    <!-- SystemJS -->
+    <script src="jspm_packages/system.js"></script>
+    <script src="config.js"></script>
+    <script>
+     System.config({
+       "paths": {
+         "*": "dist/*.js"
+       }
+     });
+    </script>
+
+    <!-- Bootstrap Aurelia -->
+    <script>
+      System.import('aurelia-bootstrapper');
+    </script>
+  </body>
+</html>

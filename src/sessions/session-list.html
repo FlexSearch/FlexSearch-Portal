@@ -1,0 +1,29 @@
+<template>
+    <div class="container">
+
+      <h3 class="left">Duplicate Detection Sessions</h3>
+
+      <table class="bordered hoverable table-responsive">
+        <thead>
+          <tr>
+            <th>Index Name</th>
+            <th>Profile Name</th>
+            <th>Job Start Time</th>
+            <th>Job End Time</th>
+          </tr>
+        </thead>
+        <tbody class="cursor-pointer">
+          <tr repeat.for="entity of sessions" click.delegate="$parent.open(entity.SessionId)">
+            <td>${entity.IndexName}</td>
+            <td>${entity.ProfileName}</td>
+            <td>${entity.JobStartTime | dateFormat:'MM/DD/YYYY HH:mm'}</td>
+            <td>${entity.JobEndTime | dateFormat:'MM/DD/YYYY HH:mm'}</td>
+          </tr>
+        </tbody>
+      </table>
+      <div class="progress" show.bind="isLoading">
+        <div class="indeterminate"></div>
+      </div>
+
+    </div>
+</template>
